@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            padding: 25px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        button[type="reset"] {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+<center>
+<div class="container">
+    <h2>Formulaire de projet</h2>
+    <form method="POST" action="traitement.php">
+        <label for="nom_complet">Nom et Prénom :</label>
+        <input type="text" id="nom_complet" name="nom_complet" required>
+
+        <label for="groupe">Numéro de groupe :</label>
+        <input type="number" id="groupe" name="groupe" required>
+
+        <label for="date_debut">Date début :</label>
+        <input type="date" id="date_debut" name="date_debut" required>
+
+        <label for="date_fin">Date fin :</label>
+        <input type="date" id="date_fin" name="date_fin" required>
+
+        <label for="encadrant">Nom de l'encadrant :</label>
+        <input type="text" id="encadrant" name="encadrant" required>
+
+        <button type="submit" name="envoyer">Envoyer</button>
+        <button type="reset">Annuler</button>
+    </form>
+    </center>
+</div>
+
+</body>
+</html>
